@@ -3,8 +3,9 @@ import sys
 import requests
 
 #Credentials
-pw = 'your password'
-user = 'your username'
+
+pw = os.environ['GITSECRET']
+user = 'pitma'
 
 def create(projectName):
     print ("das neue Projekt heißt", projectName)
